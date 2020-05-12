@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/base-python:4.0.0
+ARG BUILD_FROM=hassioaddons/base-python
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -14,9 +14,9 @@ RUN \
     apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r1 \
         cython=0.29.14-r0 \
-        g++=9.2.0-r3 \
-        gcc=9.2.0-r3 \
-        gfortran=9.2.0-r3 \
+        g++=9.2.0-r4 \
+        gcc=9.2.0-r4 \
+        gfortran=9.2.0-r4 \
     && apk add --no-cache \
         alsa-plugins-pulse=1.2.1-r0 \
         lua-resty-http=0.15-r0 \
